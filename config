@@ -1,39 +1,10 @@
 servers = (
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  {
-    address = "ssl.efnet.org";
-    chatnet = "EFNet";
-    port = "9999";
-    use_tls = "yes";
-  },
-  {
-    address = "irc.esper.net";
-    chatnet = "EsperNet";
-    port = "6697";
-    use_tls = "yes";
-    tls_verify = "yes";
-  },
-  { 
-    address = "irc.quakenet.org";
-    chatnet = "QuakeNet";
-    port = "6667";
-  },
-  {
-    address = "irc.foonetic.net";
-    chatnet = "Foonetic";
-    port = "6697";
-    use_tls = "yes";
-    tls_verify = "yes";
-    autoconnect = "yes";
-  },
-  {
-    address = "irc.rizon.net";
-    chatnet = "Rizon";
-    port = "6697";
-    use_tls = "yes";
-    tls_verify = "yes";
-    autoconnect = "yes";
-  },
+  { address = "ssl.efnet.org"; chatnet = "EFNet"; port = "9999"; use_tls = "yes"; },
+  { address = "irc.esper.net"; chatnet = "EsperNet"; port = "6697"; use_tls = "yes"; tls_verify = "yes"; },
+  { address = "irc.quakenet.org"; chatnet = "QuakeNet"; port = "6667"; },
+  { address = "irc.foonetic.net"; chatnet = "Foonetic"; port = "6697"; use_tls = "yes"; tls_verify = "yes"; autoconnect = "yes"; },
+  { address = "irc.rizon.net"; chatnet = "Rizon"; port = "6697"; use_tls = "yes"; tls_verify = "yes"; autoconnect = "yes"; },
   {
     address = "irc-eu.scuttled.net";
     chatnet = "2600";
@@ -54,24 +25,9 @@ servers = (
 );
 
 chatnets = {
-  DALnet = {
-    type = "IRC";
-    max_kicks = "4";
-    max_msgs = "20";
-    max_whois = "30";
-  };
-  EFNet = { 
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "4";
-    max_whois = "1";
-  };
-  EsperNet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "4";
-    max_whois = "1";
-  };
+  DALnet = { type = "IRC"; max_kicks = "4"; max_msgs = "20"; max_whois = "30"; };
+  EFNet = { type = "IRC"; max_kicks = "1"; max_msgs = "4"; max_whois = "1"; };
+  EsperNet = { type = "IRC"; max_kicks = "1"; max_msgs = "4"; max_whois = "1"; };
   Freenode = {
     type = "IRC";
     max_kicks = "1";
@@ -164,6 +120,7 @@ channels = (
   { name = "#irssi"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#bitcoin"; chatnet = "Freenode"; autojoin = "Yes"; },
   { name = "#ethereum"; chatnet = "Freenode"; autojoin = "Yes"; },
+  { name = "#irssi"; chatnet = "Freenode";
 
   { name = "#/g/technology"; chatnet = "Rizon"; autojoin = "Yes"; },
   { name = "#4chan"; chatnet = "Rizon"; autojoin = "Yes"; },
